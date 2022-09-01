@@ -13,7 +13,7 @@ var (
 func init()  {
 	//日志输出文件
 
-	file, err := os.OpenFile("./error.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
+	file, err := os.OpenFile("./Logs/error.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
 	if err != nil {
 		log.Fatalln("Faild to open error logger file:", err)
 	}
